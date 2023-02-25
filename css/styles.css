@@ -17,7 +17,8 @@ a {
 	color: dodgerblue;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
 	color: #dd5293;
 }
 
@@ -85,7 +86,8 @@ div.cards {
 	background-color: #fefefe;
 }
 
-.pageBtn:hover, .pageBtn:active {
+.pageBtn:hover,
+.pageBtn:active {
 	color: #ffffff;
 	background-color: #dd5293;
 }
@@ -100,7 +102,8 @@ footer span {
 	color: #fefefe;
 }
 
-footer a:hover, footer a:active {
+footer a:hover,
+footer a:active {
 	color: white;
 }
 
