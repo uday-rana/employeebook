@@ -1,18 +1,18 @@
-let pageHeading = document.querySelector(`#mainShowcase`).querySelector(`h1`);
+let pageHeading = document.querySelector(`.content`).querySelector(`h2`);
 let pageOneBtn = document.querySelector(`#btnPage1`);
 let pageTwoBtn = document.querySelector(`#btnPage2`);
 
-window.addEventListener(`load`, function (e) {
+window.addEventListener(`load`, (e) => {
 	fetchData(1);
 });
 
-pageOneBtn.onclick = function (e) {
+pageOneBtn.onclick = (e) => {
 	pageHeading.innerHTML = `Page 1`
 	clearData();
 	fetchData(1);
 };
 
-pageTwoBtn.onclick = function (e) {
+pageTwoBtn.onclick = (e) => {
 	pageHeading.innerText = `Page 2`
 	clearData();
 	fetchData(2);
@@ -30,7 +30,7 @@ function fetchData(page) {
 		data = data.data;
 		console.log(`Data array:`, data);
 
-		data.forEach(function (person) {
+		data.forEach((person) => {
 			let fullName = `${person.first_name} ${person.last_name}`;
 
 			let card = document.createElement(`article`);
