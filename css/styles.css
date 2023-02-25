@@ -24,10 +24,10 @@ a:active {
 
 #headerImage {
 	display: grid;
+	grid-template-columns: 20%;
 	height: 10rem;
 	background-image: url('../images/header.jpg');
 	background-size: cover;
-	grid-template-columns: 20%;
 	align-items: center;
 	text-align: center;
 }
@@ -59,21 +59,21 @@ div.content {
 
 div.cards {
 	display: grid;
-	margin: auto;
-	max-width: 992px;
 	grid-template-columns: auto auto auto;
 	justify-items: center;
+	margin: auto;
 	padding: 3rem;
+	max-width: 992px;
 }
 
 .card {
 	text-align: center;
 	width: 12rem;
 	padding: 2rem;
-	margin: 0 1rem;
-	border: 1px solid #aaaaaa;
+	margin: 0 1rem 1rem;
+	border: 1px solid rgba(0, 0, 0, 0.25);
 	border-radius: .2rem;
-	margin-bottom: 1rem;
+	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.10);
 }
 
 .pageBtn {
